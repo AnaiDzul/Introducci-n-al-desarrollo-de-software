@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main() {
+    int inverso=0;
+    int numero;
+    int residuo;
+    printf("Ingrese un número:");
+    scanf("%d", &numero);
+    while (numero>0) {
+         inverso=inverso*10+(numero % 10);   
+         numero=numero/10; 
+    }
+    printf("Valor del número inverso: %d\n", inverso);
+    return 0;
+} 

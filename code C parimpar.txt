@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main() {
+	float nro;
+	nro = 0;
+	do {
+		nro = nro+1;
+		scanf("%f", &nro);
+		if ((int)nro%2==0) {
+			printf("El numero %f es par.\n", nro);
+		} else {
+			printf("El numero %f es impar.\n", nro);
+		}
+	} while (nro!=10);
+	return 0;
+}
