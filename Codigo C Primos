@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int NUMEROENTERO;
+    int i;
+    int contadorDivisores =0;
+    printf("INGRESA UN NUMERO ENTERO:\n");
+    scanf("%d",&NUMEROENTERO);
+    for (i=1;i<=NUMEROENTERO;i++){contadorDivisores++;
+    }
+    if(contadorDivisores==2){
+        printf("EL NÚMERO %d ES PRIMO.\n",NUMEROENTERO);        
+    }else{
+        printf("EL NÚMERO %d NO ES PRIMO.\n",NUMEROENTERO);
+    }
+
+    return 0;
+  }
